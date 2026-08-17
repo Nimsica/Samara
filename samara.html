@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para mi persona favorita </title>
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe6e8 0%, #fff1f3 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #4a4a4a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Encabezado */
+    header {
+      text-align: center;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
+    h1 {
+      color: #e63946;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p.subtitulo {
+      font-size: 1.2rem;
+      color: #6c757d;
+    }
+
+    /* Animación de corazones flotantes */
+    .corazon-flotante {
+      position: fixed;
+      color: #ff4d6d;
+      font-size: 24px;
+      animation: flotar 6s linear infinite;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    @keyframes flotar {
+      0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    /* Contenedor de la Carta */
+    .contenedor-carta {
+      background: #ffffff;
+      max-width: 600px;
+      width: 85%;
+      margin: 30px auto;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(230, 57, 70, 0.15);
+      border: 2px solid #ffccd5;
+      position: relative;
+      z-index: 2;
+    }
+
+    .carta-titulo {
+      text-align: center;
+      color: #c9184a;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .carta-contenido {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      text-align: justify;
+      color: #333333;
+    }
+
+    .firma {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 30px;
+      color: #a4133c;
+      font-size: 1.2rem;
+    }
+
+    /* Botón interactivo */
+    .botongrupo {
+      text-align: center;
+      margin: 20px 0 50px 0;
+      z-index: 2;
+    }
+
+    button {
+      background-color: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c9184a;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Corazones en el fondo -->
+  <div class="corazon-flotante" style="left: 10%; animation-delay: 0s;">❤️</div>
+  <div class="corazon-flotante" style="left: 25%; animation-delay: 2s;">💖</div>
+  <div class="corazon-flotante" style="left: 50%; animation-delay: 4s;">💕</div>
+  <div class="corazon-flotante" style="left: 70%; animation-delay: 1s;">❤️</div>
+  <div class="corazon-flotante" style="left: 85%; animation-delay: 3s;">💗</div>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Un rincón especial para ti </h1>
+    <p class="subtitulo">Cada minuto que e estado contigo e descubierto que es el Amor.</p>
+  </header>
+
+  <!-- Carta de Amor -->
+  <main class="contenedor-carta">
+    <div class="carta-titulo">Para ti hievito</div>
+    <div class="carta-contenido">
+      <p>Hola, </p>
+      <p>Quería crear este pequeño espacio en internet solo para recordarte lo mucho que significas para mí. Desde que llegaste a mi vida, todo se ha vuelto más bonito, brillante y especial.</p>
+      <p>Gracias por tus sonrisas,  por compartir tantos momentos hermosos a mi lado y por aguantarme siendo tan cansón e intenso . Esta página es solo una pequeña muestra de todo el cariño que siento por ti cada día.</p>
+      <p>Espero que al ver esto recuerdes siempre lo mucho que te amo y lo afortunado que me siento de tenerte, además si me dejas, te hackeo el celular y hago que te salga siempre que desbloquees el celular.</p>
+    </div>
+    <div class="firma">Te adoro demasiado, <br> Tu no novio pero casi novio</div>
+  </main>
+
+  <!-- Botón de Sorpresa -->
+  <div class="botongrupo">
+    <button onclick="mostrarMensaje()">Haz clic aquí para un abrazo virtual </button>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      alert("¡Te envío un abrazo con mordisco y un besote! ");
+    }
+  </script>
+
+</body>
+</html>
